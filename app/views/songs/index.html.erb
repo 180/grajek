@@ -8,22 +8,22 @@
       Wybierz piosenkę, utwór lub kompozycję wierszowaną.
     </section>
 
-    <h2>Udostepnij</h2>
+    <h2>Udostępnij</h2>
     <%= form_tag upload_path, :method => "post", :multipart => true do %>
         <%= file_field_tag "mp3file" %><br />
         <%= submit_tag "Upload" %>
     <% end %>
 </section>
 <section id="main">
-    <h2>Pobierz/Usuń</h2>
+    <h2>Odtwórz / Pobierz / Usuń</h2>
     <table>
     <% @songs.each do |song| %>
         <tr>
             <td><%= song.key %></td>
-            <td><%= link_to "Odtwarzacz", download_url_for(song.key), :class => "html5" %></td>
-            <td><%= link_to "Pobierz", download_url_for(song.key) %></td>
-            <td><%= link_to "Torrent", torrent_url_for(song.key) %></td>
-            <td><%= link_to "Usuń",  "songs/delete/?song=" + song.key, :confirm => 'Czy jestes pewien ze chcesz usunac ' + song.key + '?' %></td>
+            <div class="kul"><td><%= link_to "Odtwarzacz", download_url_for(song.key), :class => "html5" %></td></div>
+            <div class="kul"><td><%= link_to "Pobierz", download_url_for(song.key) %></td></div>
+            <div class="kul"><td><%= link_to "Torrent", torrent_url_for(song.key) %></td></div>
+            <div class="kul"><td><%= link_to "Usuń",  "songs/delete/?song=" + song.key, :confirm => 'Czy jestes pewien ze chcesz usunac ' + song.key + '?' %></td></div>
         </tr>
     <% end %>
     </table>
