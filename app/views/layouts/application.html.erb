@@ -2,18 +2,82 @@
 <html>
 <head>
   <title>Grajek</title>
+  
+  <head>
+        
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	
+	
+   
+    
   <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js" %>
+  <%= javascript_include_tag "http://www.google.com/jsapi" %>
   <%= javascript_include_tag "application.js" %>
+  <%= javascript_include_tag "application.js" %>
+  <%= javascript_include_tag "modernizr.custom.41769.js" %>
+  <%= javascript_include_tag "banner2.js" %>
   <%= csrf_meta_tag %>
 </head>
 <body>
 		<!--start header -->
 		<div id="header-container">
 			<header class="wrapper">
-			<div id="logo">
-				<div id="title">Grajek</div>
-			</div>
+			<div id="wrapper" class="wrapper">
+                <canvas id="canvas-banner" class="inactive">
+               
+                </canvas>
+            </div>
+				
+       
+		<script type="text/javascript">
+			
+			if(Modernizr.canvas) {
+				
+				var wrapper = document.getElementById('wrapper'),
+					loading	= document.createElement('div');
+				
+				loading.className = 'loading';
+				loading.setAttribute('id','loading');
+				loading.innerHTML = 'Loading...';
+
+				wrapper.appendChild(loading);
+				
+				google.load('webfont','1');
+				google.setOnLoadCallback(function() {
+					WebFont.load({
+						google: {
+							families: ['Cookie']
+						},
+						/* Called when each requested web font has finished loading. The fontFamily parameter is the name of the font family, and fontDescription represents the style and weight of the font. */
+						active: function(fontFamily, fontDescription) {
+							setTimeout(function() {
+								
+								loading.style.display = 'none';
+								
+								var banner = new Banner();
+								banner.initialize('canvas-banner');
+								
+								document.getElementById('font').style.display = 'block';
+								
+							}, 1000);
+						},
+						inactive: function() {
+							
+							// google font not loaded, we will use the default font : Arial (set in baner.js file)
+							loading.style.display = 'none';
+							
+							var banner = new Banner();
+							banner.initialize('canvas-banner');
+							
+						}
+					});
+				});
+				
+			}
+			
+		</script>
 		   </header>
 	</div>
 		<!--end header -->
