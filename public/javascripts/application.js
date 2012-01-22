@@ -3,12 +3,14 @@ $(document).ready(function() {
     $('a.html5').click(function() {
 
         var audio = $('<audio>', {
+			 autoPlay : 'autoplay',
              controls : 'controls'
         });
 
         var url = $(this).attr('href');
         $('<source>').attr('src', url).appendTo(audio);
         audioSection.html(audio);
+		$(this).fadeOut('slow');  
         return false;
     });
 });
