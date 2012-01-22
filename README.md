@@ -4,6 +4,11 @@ URL: grajek.heroku.com
 Serwis umożliwiający umieszczanie na serwerze plików audio i odsłuchiwanie ich bezpośrednio z serwera.
 	Dlaczego tak? Bo nie chcę robić jeszcze raz fortunki, chcę czegoś nowego.  
 
+## Założenia
+
+- interfejs bez obrazków
+- lekko i widowiskowo
+
 
 
 ## Technologie użyte
@@ -23,5 +28,12 @@ Jak przekonałem sie na wykładach w Ruby on Rails można tworzyć serwisy inter
 
 
 ## Uwagi
+
 W tej chwili odtwarzanie plików działa poprawnie na przeglądarce Chrome / Chrominium
 	
+## Do zrobienia
+
+- Progress Bar przy wczytywaniu pliku
+- Rozwiązanie zagadki niekompatybilności z innymi przeglądarkami
+- Wyodrębnianie nazwy wykonawcy i tytułu
+
