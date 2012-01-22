@@ -1,15 +1,82 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7 ]><html lang="pl" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="pl" class="no-js ie7"><![endif]-->
+<!--[if IE 8 ]><html lang="pl" class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html lang="pl" class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="pl" class="no-js"><!--<![endif]-->
 <head>
-  <title>Mp3app</title>
+  <title>Grajek</title>
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js" %>
   <%= javascript_include_tag "application.js" %>
   <%= csrf_meta_tag %>
 </head>
 <body>
+<!--start header -->
+<div id="header-container">
+	<header class="wrapper">
+	<div id="logo">
+		<div id="title">fortunka</div>
+	</div>
+<!--start navigation -->
+	<nav id="authentication">
+			<div class="kul"><%= link_to "Zarejestruj się", new_user_registration_path %></div>	
+			<div class="kul"><%= link_to "Zaloguj się", new_user_session_path %></div>
+		<% end %>
+	</nav>
+    <nav>
+		<div class="kul"><a href="/">Lista</a></div>
+        
+    </nav>
+<!--end navigation -->
+       </header>
+</div>
+<!--end header -->
+<!--start main content -->
+<div id="main" class="wrapper">
+	<aside>
+			
+			<% if user_signed_in? %>
+					<span class="logged">Zalogowany jako <%= current_user.email %><br/>
+					<%= link_to "Nie Ty?", destroy_user_session_path, :method => :delete %></span>
+					
+			<%end%>
+			<br/>
+			<p>Jeszcze tu nic nie ma </br> ALE </br> może tu być Twoja reklama</p>
+			<span id="result_box" lang="en"></span>
+			
+			
+	</aside>
+			
+	<article>
+	
+
 <div id="container">
 <%= yield %>
 </div>
-</body>
+  </article>
+	
+</div>
+<!--end main content -->
+<div id="footer-container">	
+  <footer class="wrapper">
+		<!--start footer nav -->
+		<nav>
+			<div class="foot-nav"><a href="http://www.initializr.com/">Initializr</a></div>
+			<div class="foot-nav"><%= link_to "Losuj fortunkę", random_path %></div>
+			<div class="foot-nav"><a href="http://wbzyl.inf.ug.edu.pl/rails4/">Ruby@Wbzyl</a></div>
+		</nav> 	
+		
+		<!--end footer nav -->  
+   </footer> 
+   
+   <!-- 
+   <div class="copy"><a href="http://www.imediacreatives.it" target="_blank">
+		Coder &amp; Design Imediacreatives</a> &copy; copyright revan
+	</div>--> 
+   </div>
+<!--end footer -->
+	<%= render :partial => 'layouts/ga' if Rails.env == 'production' %> 
+  </body>
 </html>
