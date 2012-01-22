@@ -9,8 +9,7 @@ $(document).ready(function() {
 
         var url = $(this).attr('href');
         $('<source>').attr('src', url).appendTo(audio);
-        audioSection.html(audio);
-		$(this).fadeOut('slow');  
+        audioSection.html(audio); 
         return false;
     });
 });
