@@ -26,7 +26,7 @@
     <% @songs.each do |song| %>
         <tr>
             <td><%= song.key %></td>
-            <td><div class="kul"><%= link_to "Odtwarzacz", download_url_for(song.key), :class => "html5" %></div></td>
+            <td><div class="kul"><%= link_to "Graj", download_url_for(song.key), :class => "html5" %></div></td>
             <td><div class="kul"><%= link_to "Pobierz", download_url_for(song.key) %></div></td>
             <td><div class="kul"><%= link_to "Torrent", torrent_url_for(song.key) %></div></td>
             <td><div class="kul"><%= link_to "Usuń",  "songs/delete/?song=" + song.key, :confirm => 'Czy jestes pewien ze chcesz usunac ' + song.key + '?' %></div></td>
