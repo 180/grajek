@@ -5,7 +5,7 @@
 <section id="sidebar">
     <h2>HTML5 Audio</h2>
     <section id="audio">
-      Sobie gra.
+      Wybierz piosenkę, utwór lub kompozycję wierszowaną.
     </section>
 
     <h2>Udostepnij</h2>
@@ -23,7 +23,7 @@
             <td><%= link_to "Odtwarzacz", download_url_for(song.key), :class => "html5" %></td>
             <td><%= link_to "Pobierz", download_url_for(song.key) %></td>
             <td><%= link_to "Torrent", torrent_url_for(song.key) %></td>
-            <td><%= link_to "Usun",  "songs/delete/?song=" + song.key, :confirm => 'Czy jestes pewien ze chcesz usunac ' + song.key + '?' %></td>
+            <td><%= link_to "Usuń",  "songs/delete/?song=" + song.key, :confirm => 'Czy jestes pewien ze chcesz usunac ' + song.key + '?' %></td>
         </tr>
     <% end %>
     </table>
