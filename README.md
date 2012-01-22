@@ -16,10 +16,12 @@ Serwis umożliwiający umieszczanie na serwerze plików audio i odsłuchiwanie i
 - github.com 
 - jQuery
 - SQLite
+- torrent
 
 ## Metodologia pracy
 Jak przekonałem sie na wykładach w Ruby on Rails można tworzyć serwisy internetowe w 15 minut. Nie jestem jeszcze takim wymiataczem, żeby zrobić to w tak, krótkim czasie, więc dam sobie 1 dzień. Jeżeli Railsy rzeczywiście są takie fajne, to na pewno się uda. 
 
 
 ## Uwagi
-	w tej chwili odtwarzanie plików działa poprawnie na przeglądarce Chrome / Chrominium
+W tej chwili odtwarzanie plików działa poprawnie na przeglądarce Chrome / Chrominium
+	
