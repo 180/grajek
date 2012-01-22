@@ -8,8 +8,18 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-<div id="container">
-<%= yield %>
-</div>
+		<!--start header -->
+		<div id="header-container">
+			<header class="wrapper">
+			<div id="logo">
+				<div id="title">Grajek</div>
+			</div>
+		   </header>
+	</div>
+		<!--end header -->
+	<div id="container">
+	<%= yield %>
+	</div>
+
 </body>
 </html>
