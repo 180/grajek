@@ -17,9 +17,18 @@ body {
   overflow: hidden;
 }
 #sidebar {
-    width: 30%;
-    background: lightgray;
-    float: left;
+   padding-left: 30px;
+	width: 30%;
+	border: 0;
+	border-color: #1d18lf;
+	background: #4e7178;
+	color: 1d181f;
+	float: left;
+	
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+	-moz-box-shadow: 0px 0px 10px #000;
+    -webkit-box-shadow: 0px 0px 10px #000;
 }
 #main {
     width: 70%;
