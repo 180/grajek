@@ -1,19 +1,25 @@
 <header>
-  <h1>Taki Grajek</h1>
+  <h1>Grajek</h1>
 </header>
 <div class="clear"></div>
 <section id="sidebar">
-    <h2>HTML5 Audio</h2>
-    <section id="audio">
-      Wybierz piosenkę, utwór lub kompozycję wierszowaną.
-    </section>
+    <section id="player">
+		<h2>Odtwarzacz</h2>
+		<section id="audio">
+		  Wybierz piosenkę, utwór lub kompozycję wierszowaną.
+		</section>
+	</section>
 
-    <h2>Udostępnij</h2>
-    <%= form_tag upload_path, :method => "post", :multipart => true do %>
+    
+	<section id="dodaj">
+		<h2>Dodaj</h2>
+		<%= form_tag upload_path, :method => "post", :multipart => true do %>
         <%= file_field_tag "mp3file" %><br />
-        <%= submit_tag "Upload" %>
-    <% end %>
+        <%= submit_tag "Dodaj" %>
+		<% end %>
+	</section>
 </section>
+
 <section id="main">
     <h2>Odtwórz / Pobierz / Usuń</h2>
     <table>
