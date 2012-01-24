@@ -1,5 +1,7 @@
 Mp3app::Application.routes.draw do
-  resources :muzykas
+  devise_for :users
+
+  
 
   match "songs/upload", :as => "upload"
   match "songs/downloads", :as => "downloads"
