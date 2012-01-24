@@ -44,11 +44,11 @@ a {
 	background: none; 
 }
 
-h2 {
-	font-size:18px;
+h3 {
+	font-size:22px;
 	font-family: Arial, Helvetica, sans-serif;
 	color: #6B5E50;
-	text-shadow: 0px 2px 1px #A08C78;
+	text-shadow: 0px 1px 0px #A08C78;
 }
 
 tr {
