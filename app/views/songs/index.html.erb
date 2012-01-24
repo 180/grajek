@@ -1,12 +1,13 @@
 <header>
-  <h1>Grajek</h1>
+ 
 </header>
 <div class="clear"></div>
 <section id="sidebar">
     <section id="player">
 		<h2>Odtwarzacz</h2>
 		<section id="audio">
-		  Wybierz piosenkę, utwór lub kompozycję wierszowaną.
+		  Wybierz piosenkę, utwór lub kompozycję wierszowaną z listy utworów.
+		 &nbsp  <br></br>
 		</section>
 	</section>
 
@@ -16,12 +17,14 @@
 		<%= form_tag upload_path, :method => "post", :multipart => true do %>
         <%= file_field_tag "mp3file" %><br />
         <%= submit_tag "Dodaj" %>
+        &nbsp  <br></br>
 		<% end %>
 	</section>
 	<%end%>
 </section>
 
 <section id="main">
+	<br>
     <h2>Lista utworów</h2>
     <table>
     <% @songs.each do |song| %>

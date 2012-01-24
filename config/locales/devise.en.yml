@@ -1,8 +1,8 @@
 en:
   errors:
     messages:
-      not_found: "not found"
-      already_confirmed: "was already confirmed"
+      not_found: "nie znaleziono"
+      already_confirmed: "już potwierdzono"
       not_locked: "was not locked"
 
   devise:
@@ -10,13 +10,13 @@ en:
       unauthenticated: 'You need to sign in or sign up before continuing.'
       unconfirmed: 'You have to confirm your account before continuing.'
       locked: 'Your account is locked.'
-      invalid: 'Invalid email or password.'
-      invalid_token: 'Invalid authentication token.'
-      timeout: 'Your session expired, please sign in again to continue.'
-      inactive: 'Your account was not activated yet.'
+      invalid: 'Błędny email lub hasło.'
+      invalid_token: 'Nieprawidłowu token.'
+      timeout: 'Twoja sesja wygasła. Zaloguj się jeszcze raz.'
+      inactive: 'Twoje konto nie jest jeszcze aktywowane.'
     sessions:
-      signed_in: 'Signed in successfully.'
-      signed_out: 'Signed out successfully.'
+      signed_in: 'Zalogowałeś się.'
+      signed_out: 'Wylogowałeś się.'
     passwords:
       send_instructions: 'You will receive an email with instructions about how to reset your password in a few minutes.'
       updated: 'Your password was changed successfully. You are now signed in.'
@@ -24,13 +24,13 @@ en:
       send_instructions: 'You will receive an email with instructions about how to confirm your account in a few minutes.'
       confirmed: 'Your account was successfully confirmed. You are now signed in.'
     registrations:
-      signed_up: 'You have signed up successfully.'
-      updated: 'You updated your account successfully.'
+      signed_up: 'Rejestracja zakończona sukcesem.'
+      updated: 'Konto zostało zaktualizowane.'
       destroyed: 'Bye! Your account was successfully cancelled. We hope to see you again soon.'
     unlocks:
       send_instructions: 'You will receive an email with instructions about how to unlock your account in a few minutes.'
       unlocked: 'Your account was successfully unlocked. You are now signed in.'
     mailer:
       confirmation_instructions: 'Confirmation instructions'
-      reset_password_instructions: 'Reset password instructions'
+      reset_password_instructions: 'Instrukcje dotyczące resetowania hasła'
       unlock_instructions: 'Unlock Instructions'

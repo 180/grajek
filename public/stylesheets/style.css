@@ -21,11 +21,12 @@ body {
   overflow: hidden;
 }
 #sidebar {
+	color: #CCCCDF;
    padding-left: 30px;
 	width: 400px;
 	border: 0;
 	border-color: #1d18lf;
-	background: #4e7178;
+	background: #0C0C25;
 	color: 1d181f;
 	float: left;
 	
@@ -185,13 +186,12 @@ tr {
 
 
 footer nav{
-margin-right:17em;
+margin-right:13em;
 }
 
 .foot-nav{
-	background-image:url(/images/footer-arrow.png);
-	background-repeat:no-repeat;
-	background-position:left center;
+	
+	
 	color: white;
 	font-size: 20px;
 	font-family: Georgia, serif;
@@ -217,4 +217,62 @@ margin-right:17em;
 	background: none; 
 }
 
+
+nav{
+margin-right:12em;
+float: right;
+}
+
+.nav {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em;
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	color: #fef4e9;
+	border: solid 1px #14143D;
+	background: none; 
+	background: -webkit-gradient(linear, left top, left bottom, from(#0C0C25), to(#14143D));
+	background: -moz-linear-gradient(top,  #0C0C25,  #14143D);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0C0C25', endColorstr='#14143D');
+}
+.nav:hover {
+	text-decoration: none;
+	background: none; 
+	background: -webkit-gradient(linear, left top, left bottom, from(#0A0A1F), to(#1F1F5C));
+	background: -moz-linear-gradient(top,  #0A0A1F,  #01F1F5C);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0A0A1F', endColorstr='#1F1F5C');
+}
+
+.nav a {
+	color: #F0F0F0;
+	font-weight:bold;
+	font-size:16px;
+	text-decoration: none;
+	text-shadow: -1px #FFFFFF;
+}
+
+.navp {
+	display: inline-block;
+	background-color: #BAA691;
+	text-align: center;
+	font: 13px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+		text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em;
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	color: white;
+	}
 
