@@ -44,6 +44,12 @@ a {
 	background: none; 
 }
 
+h1 {
+	font-size:18px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #6B5E50;
+	text-shadow: 0px 2px 1px #A08C78;
+}
 
 tr {
     padding: 5px;
