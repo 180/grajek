@@ -5,3 +5,4 @@ require File.expand_path('../application', __FILE__)
 Mp3app::Application.initialize!
 
 BUCKET = 'Chmura'
+
