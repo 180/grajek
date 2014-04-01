@@ -11,8 +11,8 @@ module Mp3app
     config.filter_parameters += [:password]
 
     AWS::S3::Base.establish_connection!(
-      :access_key_id     => 'AKIAJI4ZKSDW6ETRVRGA',
-      :secret_access_key => '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'
+      :access_key_id     => '***',
+      :secret_access_key => '***'
     )
 
     BUCKET = 'Chmura'
